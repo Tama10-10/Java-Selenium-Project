@@ -57,6 +57,7 @@ public class Automation {
            List<WebElement>cells=row.findElements(By.tagName("tr"));
            for(WebElement cell:cells)
            {
+               System.out.println(cell.getText());
                writer.write(cell.getText());
            }
            writer.write("\n");
